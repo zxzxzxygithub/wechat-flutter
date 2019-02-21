@@ -26,6 +26,21 @@ class _HomeViewState extends State{
             );
           },
           leading: new Image.asset("images/img.jpg",width: 40.0,height: 40.0,fit: BoxFit.cover,),
+          title: new Text("林志玲"),
+          subtitle: new Text("今晚去我家还是你家？"),
+          trailing: new Text("10:00"),
+        ),
+        new ListTile(
+          onTap: (){
+            Navigator.of(context).push(
+                new MaterialPageRoute(
+                    builder: (context){
+                      return new XKTabBar();
+                    }
+                )
+            );
+          },
+          leading: new Image.asset("images/img.jpg",width: 40.0,height: 40.0,fit: BoxFit.cover,),
           title: new Text("班主任"),
           subtitle: new Text("你高考考了满分你知道吗？"),
           trailing: new Text("9:00"),
