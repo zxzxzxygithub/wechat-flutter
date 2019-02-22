@@ -4,6 +4,7 @@ import 'Home.dart';
 import 'ContactView.dart';
 import 'FindView.dart';
 import 'MineView.dart';
+/// 入口
 void main() => runApp(new myApp());
 
 class myApp extends StatelessWidget{
@@ -26,12 +27,13 @@ class RandomWords extends StatefulWidget{
   createState() => new RandomWordsState();
 }
 class RandomWordsState extends State<RandomWords>{
-  final List<BottomNavigationBarItem> listSet = [new BottomNavigationBarItem(icon: new Icon(Icons.chat,color: Colors.grey),title: new Text("微信"),),
+  final List<BottomNavigationBarItem> listSet = [
+  new BottomNavigationBarItem(icon: new Icon(Icons.chat,color: Colors.grey),title: new Text("微信"),),
   new BottomNavigationBarItem(icon: new Icon(Icons.perm_contact_calendar,color: Colors.grey,),title: new Text("通讯录"),),
   new BottomNavigationBarItem(icon: new Icon(Icons.room,color: Colors.grey),title: new Text("发现"),),
   new BottomNavigationBarItem(icon: new Icon(Icons.perm_identity,color: Colors.grey),title: new Text("我"),),
   ];
-  final List<StatefulWidget> vcSet = [new HomeView(),new ContactView(),new FindView(),new MineView()];
+  final List<StatefulWidget> vcSet = [new MsgView(),new ContactView(),new FindView(),new MineView()];
   int _sindex=0;
   @override
   Widget build(BuildContext context){

@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'XKTabBar.dart';
-class HomeView extends StatefulWidget{
+
+/// 消息界面
+class MsgView extends StatefulWidget{
   @override
-  _HomeViewState createState() => new _HomeViewState();
+  _MsgViewState createState() => new _MsgViewState();
 }
-class _HomeViewState extends State{
+class _MsgViewState extends State{
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
